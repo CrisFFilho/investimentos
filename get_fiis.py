@@ -14,6 +14,7 @@ def query(db_connection, dql_statement):
 def commit_transaction(db_connection):
     db_connection.commit()
 
+    
 def open_cnn():
     return psycopg2.connect(
         host=PGSQL_HOST,
